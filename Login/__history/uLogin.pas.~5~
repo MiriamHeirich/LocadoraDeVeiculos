@@ -27,7 +27,6 @@ type
     pnlNome: TPanel;
     lblNome: TLabel;
     edtNome: TEdit;
-    procedure Image1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,10 +39,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TfrmLogin.Image1Click(Sender: TObject);
-begin
-
-end;
 
 end.
