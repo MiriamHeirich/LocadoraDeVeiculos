@@ -5,13 +5,12 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage;
+  Vcl.Imaging.pngimage, Vcl.Buttons;
 
 type
   TfrmLogin = class(TForm)
     pnlFundo: TPanel;
     pnlLateral: TPanel;
-    lblBemVIndo: TLabel;
     lblMfhLocadora: TLabel;
     lblDesenvovedor: TLabel;
     Panel1: TPanel;
@@ -25,8 +24,15 @@ type
     Label6: TLabel;
     lblDigiteUsuario: TLabel;
     pnlNome: TPanel;
-    lblNome: TLabel;
     edtNome: TEdit;
+    Label7: TLabel;
+    pnlBotão: TPanel;
+    btnAbort: TSpeedButton;
+    Panel2: TPanel;
+    lblSenha: TLabel;
+    Edit1: TEdit;
+    procedure btnAbortClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,5 +45,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmLogin.btnAbortClick(Sender: TObject);
+begin
+     Close;
+end;
+
+procedure TfrmLogin.FormActivate(Sender: TObject);
+begin
+  pnlFundo.Left:= Round((frmLogin.Width-pnlFundo.Width )/ 2);
+  pnlFundo.Top:= Round((frmLogin.Height -pnlFundo.Height )/ 2);
+end;
 
 end.

@@ -1,4 +1,4 @@
-object frmLogin: TfrmLogin
+﻿object frmLogin: TfrmLogin
   Left = 0
   Top = 0
   Align = alClient
@@ -13,11 +13,13 @@ object frmLogin: TfrmLogin
   Font.Name = 'Segoe UI Emoji'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 17
   object pnlFundo: TPanel
     Left = 40
-    Top = 24
+    Top = 8
     Width = 729
     Height = 473
     Color = clWhite
@@ -63,8 +65,8 @@ object frmLogin: TfrmLogin
       ParentFont = False
     end
     object lblDigiteUsuario: TLabel
-      Left = 400
-      Top = 25
+      Left = 395
+      Top = 41
       Width = 212
       Height = 21
       Caption = 'Digite seu Usu'#225'rio e Senha'
@@ -75,6 +77,21 @@ object frmLogin: TfrmLogin
       Font.Style = [fsBold]
       ParentFont = False
     end
+    object btnAbort: TSpeedButton
+      Left = 696
+      Top = 2
+      Width = 25
+      Height = 31
+      Cursor = crHandPoint
+      Caption = 'X'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Segoe UI Emoji'
+      Font.Style = []
+      ParentFont = False
+      OnClick = btnAbortClick
+    end
     object pnlLateral: TPanel
       Left = 1
       Top = 1
@@ -84,19 +101,6 @@ object frmLogin: TfrmLogin
       Color = clSilver
       ParentBackground = False
       TabOrder = 0
-      object lblBemVIndo: TLabel
-        Left = 32
-        Top = 24
-        Width = 210
-        Height = 21
-        Caption = 'Bem Vindo '#224' MFH Locadora'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
       object lblMfhLocadora: TLabel
         Left = 32
         Top = 168
@@ -132,11 +136,11 @@ object frmLogin: TfrmLogin
         Color = clSilver
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 0
-        ExplicitTop = -15
+        ExplicitLeft = 8
+        ExplicitTop = -1
         object Label1: TLabel
           Left = 32
-          Top = 23
+          Top = 37
           Width = 210
           Height = 21
           Caption = 'Bem Vindo '#224' MFH Locadora'
@@ -148,10 +152,11 @@ object frmLogin: TfrmLogin
           ParentFont = False
         end
         object Label2: TLabel
-          Left = 31
-          Top = 176
-          Width = 226
-          Height = 44
+          Left = 16
+          Top = 199
+          Width = 241
+          Height = 50
+          AutoSize = False
           Caption = 'MFH Locadora'
           Font.Charset = ANSI_CHARSET
           Font.Color = clBlack
@@ -175,7 +180,7 @@ object frmLogin: TfrmLogin
         end
         object lblVersao: TLabel
           Left = 158
-          Top = 226
+          Top = 249
           Width = 61
           Height = 13
           Caption = 'vers'#227'o 1.0.0'
@@ -187,10 +192,10 @@ object frmLogin: TfrmLogin
           ParentFont = False
         end
         object Image1: TImage
-          Left = 38
-          Top = 94
-          Width = 98
-          Height = 82
+          Left = 16
+          Top = 143
+          Width = 67
+          Height = 57
           Picture.Data = {
             0954506E67496D61676589504E470D0A1A0A0000000D49484452000002000000
             02000806000000F478D4FA0000000473424954080808087C0864880000000970
@@ -1152,23 +1157,63 @@ object frmLogin: TfrmLogin
       end
     end
     object pnlNome: TPanel
-      Left = 336
-      Top = 96
-      Width = 393
-      Height = 76
+      Left = 319
+      Top = 126
+      Width = 395
+      Height = 77
       TabOrder = 1
-      object lblNome: TLabel
+      object Label7: TLabel
         Left = 1
         Top = 1
-        Width = 391
+        Width = 393
         Height = 17
         Align = alTop
         Caption = 'Nome:'
         ExplicitWidth = 39
       end
       object edtNome: TEdit
+        Left = 8
+        Top = 24
+        Width = 224
+        Height = 25
+        TabOrder = 0
+      end
+    end
+    object pnlBotão: TPanel
+      Left = 419
+      Top = 371
+      Width = 150
+      Height = 35
+      Cursor = crHandPoint
+      Caption = 'Confirmar'
+      Color = 16759413
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Segoe UI Emoji'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Panel2: TPanel
+      Left = 319
+      Top = 209
+      Width = 395
+      Height = 77
+      TabOrder = 3
+      object lblSenha: TLabel
         Left = 1
-        Top = 25
+        Top = 1
+        Width = 393
+        Height = 17
+        Align = alTop
+        Caption = 'Senha:'
+        ExplicitWidth = 38
+      end
+      object Edit1: TEdit
+        Left = 8
+        Top = 24
         Width = 224
         Height = 25
         TabOrder = 0
