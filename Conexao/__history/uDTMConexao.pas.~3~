@@ -1,0 +1,28 @@
+unit uDTMConexao;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, ZAbstractConnection, ZConnection, Data.DB,
+  Datasnap.DBClient;
+
+type
+  TDataModule1 = class(TDataModule)
+    conexao: TZConnection;
+    dtsConexao: TClientDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

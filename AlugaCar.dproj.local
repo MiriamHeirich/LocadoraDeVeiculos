@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/10 16:46:07.000.298,=D:\Arquivos do Usuario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/10 16:46:47.000.166,D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Units\uMenuPrincipal.dfm=D:\Arquivos do Usuario\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/07/10 16:46:47.000.166,D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Units\uMenuPrincipal.pas=D:\Arquivos do Usuario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/10 16:47:09.000.422,D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\AlugaCar.dproj=D:\Arquivos do Usuario\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/10 16:55:49.000.303,=D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Unit2.pas</Transaction>
+    <Transaction>2022/07/10 16:56:15.000.104,D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Login\uLogin.pas=D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Unit2.pas</Transaction>
+    <Transaction>2022/07/10 16:56:15.000.104,D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Login\uLogin.dfm=D:\Arquivos do Usuario\Desktop\SistemaLocadoraDeVeiculos\Unit2.dfm</Transaction>
+    <Transaction>2022/07/14 11:57:49.000.383,=C:\Users\Bsoft\Desktop\Veiculo\LocadoraDeVeiculos-main\LocadoraDeVeiculos-main\Unit1.pas</Transaction>
+    <Transaction>2022/07/14 11:58:24.000.075,C:\Users\Bsoft\Desktop\Veiculo\LocadoraDeVeiculos-main\LocadoraDeVeiculos-main\Unit1.pas=C:\Users\Bsoft\Desktop\Veiculo\LocadoraDeVeiculos-main\LocadoraDeVeiculos-main\Conexao\uDTMConexao.pas</Transaction>
+    <Transaction>2022/07/14 11:58:24.000.076,C:\Users\Bsoft\Desktop\Veiculo\LocadoraDeVeiculos-main\LocadoraDeVeiculos-main\Unit1.dfm=C:\Users\Bsoft\Desktop\Veiculo\LocadoraDeVeiculos-main\LocadoraDeVeiculos-main\Conexao\uDTMConexao.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
