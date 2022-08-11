@@ -28,7 +28,7 @@
     object Label4: TLabel
       Left = 40
       Top = 184
-      Width = 220
+      Width = 112
       Height = 19
       Caption = 'MFH Locadora'
       Font.Charset = ANSI_CHARSET
@@ -41,7 +41,7 @@
     object Label5: TLabel
       Left = 48
       Top = 192
-      Width = 220
+      Width = 112
       Height = 19
       Caption = 'MFH Locadora'
       Font.Charset = ANSI_CHARSET
@@ -104,7 +104,7 @@
       object lblMfhLocadora: TLabel
         Left = 32
         Top = 168
-        Width = 220
+        Width = 112
         Height = 19
         Caption = 'MFH Locadora'
         Font.Charset = ANSI_CHARSET
@@ -136,14 +136,12 @@
         Color = clSilver
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 8
-        ExplicitTop = -1
         object Label1: TLabel
           Left = 32
           Top = 37
-          Width = 210
+          Width = 93
           Height = 21
-          Caption = 'Bem Vindo '#224' MFH Locadora'
+          Caption = 'Bem Vindo !'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -160,8 +158,8 @@
           Caption = 'MFH Locadora'
           Font.Charset = ANSI_CHARSET
           Font.Color = clBlack
-          Font.Height = -37
-          Font.Name = 'Bernard MT Condensed'
+          Font.Height = -29
+          Font.Name = 'Roboto'
           Font.Style = [fsItalic]
           ParentFont = False
         end
