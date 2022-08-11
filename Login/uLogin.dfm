@@ -1214,6 +1214,7 @@
         Top = 24
         Width = 224
         Height = 25
+        PasswordChar = '*'
         TabOrder = 0
       end
     end
