@@ -4,8 +4,8 @@
   Align = alClient
   BorderStyle = bsNone
   Caption = 'Login'
-  ClientHeight = 522
-  ClientWidth = 804
+  ClientHeight = 390
+  ClientWidth = 762
   Color = 525316
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
@@ -18,10 +18,10 @@
   PixelsPerInch = 96
   TextHeight = 17
   object pnlFundo: TPanel
-    Left = 40
-    Top = 8
-    Width = 729
-    Height = 473
+    Left = 8
+    Top = 0
+    Width = 737
+    Height = 369
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
@@ -96,11 +96,12 @@
       Left = 1
       Top = 1
       Width = 288
-      Height = 471
+      Height = 367
       Align = alLeft
       Color = clSilver
       ParentBackground = False
       TabOrder = 0
+      ExplicitHeight = 471
       object lblMfhLocadora: TLabel
         Left = 32
         Top = 168
@@ -131,11 +132,12 @@
         Left = 1
         Top = 1
         Width = 288
-        Height = 469
+        Height = 365
         Align = alLeft
         Color = clSilver
         ParentBackground = False
         TabOrder = 0
+        ExplicitHeight = 469
         object Label1: TLabel
           Left = 32
           Top = 37
@@ -1172,14 +1174,14 @@
       object edtNome: TEdit
         Left = 8
         Top = 24
-        Width = 224
+        Width = 297
         Height = 25
         TabOrder = 0
       end
     end
     object pnlBotão: TPanel
-      Left = 419
-      Top = 371
+      Left = 427
+      Top = 307
       Width = 150
       Height = 35
       Cursor = crHandPoint
@@ -1212,7 +1214,7 @@
       object Edit1: TEdit
         Left = 8
         Top = 24
-        Width = 224
+        Width = 297
         Height = 25
         PasswordChar = '*'
         TabOrder = 0
