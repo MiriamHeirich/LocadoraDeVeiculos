@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.pngimage, Vcl.Buttons;
+  Vcl.Imaging.pngimage, Vcl.Buttons, Data.DB, ZAbstractRODataset,uMenuPrincipal,
+  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection;
 
 type
   TfrmLogin = class(TForm)
@@ -30,11 +31,15 @@ type
     btnAbort: TSpeedButton;
     Panel2: TPanel;
     lblSenha: TLabel;
-    Edit1: TEdit;
+    edtSenha: TEdit;
+    ConexaoBD: TZConnection;
+    qryLogin: TZQuery;
     procedure btnAbortClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
+    procedure pnlBotãoClick(Sender: TObject);
   private
     { Private declarations }
+
   public
     { Public declarations }
   end;
@@ -56,5 +61,26 @@ begin
   pnlFundo.Left:= Round((frmLogin.Width-pnlFundo.Width )/ 2);
   pnlFundo.Top:= Round((frmLogin.Height -pnlFundo.Height )/ 2);
 end;
+
+
+procedure TfrmLogin.pnlBotãoClick(Sender: TObject);
+
+begin
+  qryLogin.Active:=false;
+  qryLogin.SQL.Clear;
+  qryLogin.SQL.Add('select senha from usuario where senha ='''+ edtNome.text+ '''');
+ qryLogin.ExecSQL;
+  qryLogin.Active:=true;
+    if edtSenha.text = qryLogin.FieldByName('senha').Value then
+      begin
+       form1.show;
+      end
+    else
+      begin
+
+       ShowMessage('Erro');
+      end;
+end;
+
 
 end.

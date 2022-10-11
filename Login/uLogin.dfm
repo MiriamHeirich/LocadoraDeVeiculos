@@ -101,7 +101,6 @@
       Color = clSilver
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 471
       object lblMfhLocadora: TLabel
         Left = 32
         Top = 168
@@ -137,7 +136,6 @@
         Color = clSilver
         ParentBackground = False
         TabOrder = 0
-        ExplicitHeight = 469
         object Label1: TLabel
           Left = 32
           Top = 37
@@ -1195,6 +1193,7 @@
       ParentBackground = False
       ParentFont = False
       TabOrder = 2
+      OnClick = pnlBotãoClick
     end
     object Panel2: TPanel
       Left = 319
@@ -1211,7 +1210,7 @@
         Caption = 'Senha:'
         ExplicitWidth = 38
       end
-      object Edit1: TEdit
+      object edtSenha: TEdit
         Left = 8
         Top = 24
         Width = 297
@@ -1220,5 +1219,28 @@
         TabOrder = 0
       end
     end
+  end
+  object ConexaoBD: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'controls_cp=CP_UTF16')
+    Connected = True
+    SQLHourGlass = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'cadastroveiculos'
+    User = 'root'
+    Password = ''
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Componentes\libmysql.dll'
+    Left = 608
+    Top = 72
+  end
+  object qryLogin: TZQuery
+    Connection = ConexaoBD
+    Params = <>
+    Left = 648
+    Top = 72
   end
 end
